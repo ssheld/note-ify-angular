@@ -1,0 +1,17 @@
+.nav-bar {
+  height: 10vh;
+}
+
+.fixed-sidenav {
+  height: 90vh;
+}
+
+.content-area {
+  height: 90vh;
+}
+
+.site-title {
+  text-decoration: none!important;
+  color:inherit;
+}
+

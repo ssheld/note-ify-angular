@@ -1,0 +1,13 @@
+.row {
+  max-height: 6em;
+}
+
+.card {
+  width:100%;
+  max-height: 10em;
+}
+
+.card-body {
+  padding-left:.2em;
+  padding-top:.4em;
+}

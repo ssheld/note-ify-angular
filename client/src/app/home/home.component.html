@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 col-sm-8 col-xs-4 order-sm-2 text-center bg-info">
+      <a class="site-title" routerLink="/">
+        <h1 class="display-4 mt-2">
+          Note-ify
+        </h1>
+      </a>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-4 order-sm-3 text-center bg-info">
+      <nav class="navbar-text navbar-dark mt-4 bg-info">
+        <a routerLink="/new-note-form">
+          <button class="btn btn-outline-dark" type="button">Create Note</button>
+        </a>
+      </nav>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-4 order-sm-1 text-center bg-light">
+      <h3 class="mt-5">
+        All Notes
+      </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-xs-12 bg-light fixed-sidenav>">
+      <nav>
+        <app-note-card
+          *ngFor="let note of noteList"
+          [noteCard]="note"></app-note-card>
+      </nav>
+    </div>
+    <div class="col-sm-10 col-xs-12 mt-5 bg-info content-area">
+      <p class="mx-4 text-center">
+        Welcome to Note-ify! You will find a list of all your notes in the left column. Click one to see the note, edit or delete it.
+        If you would like to create a new note then please click the "Create Note" button on the top right of the page.
+      </p>
+    </div>
+  </div>
+</div>
+

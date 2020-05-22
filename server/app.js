@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 require('./config/db');
 
-const apiRouter = require('./routes/api/api.notes')
+const apiRouter = require('./routes')
 
 var app = express();
 
